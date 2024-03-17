@@ -37,7 +37,7 @@ const Professionals = () => {
           <h2 className="text-[1.875rem] tracking-[0.087rem] leading-7 font-bold lg:text-[2.125rem] lg:tracking-[0.046rem] lg:leading-9 lg:font-black underline text-center">
             התוכנית כוללת:
           </h2>
-          <ul className="flex-col flex gap-5 lg:gap-6 text-base leading-5 lg:text-xl text-right lg:leading-6 font-bold text-color-1">
+          <ul className="flex-col flex gap-5 lg:gap-6 text-base leading-5 lg:text-lg text-right lg:leading-5 font-bold text-color-1">
             <li>
               🎯 אימונים אישיים - פעמיים בשבוע
               <ul className="mt-1">
