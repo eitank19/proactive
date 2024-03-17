@@ -36,7 +36,7 @@ const Hero = () => {
       </div>
       <div className="block relative lg:hidden mt-[3.849rem]">
         <img src={'assets/images/hero-small.png'} className="w-full" alt="" />
-        <div className="gradient-top absolute h-[31.25rem] md:h-[43.75rem] bottom-0 w-full">
+        <div className="gradient-top absolute h-full bottom-0 w-full">
           <div className="px-4 w-[calc(100%-2rem)] absolute -bottom-[18.75rem] md:-bottom-[9.375rem] left-1/2  -translate-x-1/2 -translate-y-1/2   py-7 rounded-[1.25rem] bg-color-9 backdrop-blur-[1.25rem]">
             <p className="text-lg tracking-[0.038rem] leading-6 font-normal text-center [text-shadow:0_0_1.563rem_rgba(0,0,0,0.3)] mb-3">
               יאללה, הגיע הזמן לעשות את הצעד

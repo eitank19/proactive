@@ -6,10 +6,10 @@ const Professionals = () => {
     >
       <div className="mt-[6.25rem] flex-col lg:flex-row text-center lg:text-right flex justify-between items-center gap-7 lg:gap-10 xl:gap-16">
         <div className="flex-1 flex-col flex gap-5 lg:gap-6 justify-center">
-          <h2 className="text-[1.875rem] md:text-[2.125rem] tracking-[0.021rem] leading-9 font-black">
+          <h2 className="text-[1.875rem] md:text-[2.125rem] tracking-[0.021rem] leading-8 md:leading-9 font-black">
             שואפים למקצוענות?
           </h2>
-          <h3 className="text-[1.5rem] md:text-[1.75rem] tracking-[0.018rem] leading-8 font-bold text-color-2">
+          <h3 className="text-[1.5rem] md:text-[1.75rem] tracking-[0.018rem] leading-7 md:leading-8 font-bold text-color-2">
             הצטרפו לתוכנית הפיתוח שלנו לספורטאים
           </h3>
           <p className="text-lg tracking-[0.021rem] leading-6 font-normal">
