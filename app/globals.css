@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-color-1 text-color-4 text-base leading-normal;
+  }
+}
+
+@layer components {
+  .lg-background {
+    background-image: linear-gradient(
+      0deg,
+      rgba(212, 212, 212, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3),
+      inset 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .lg-left-background {
+    /* background: linear-gradient(
+      90deg,
+      rgb(39, 35, 96) 0%,
+      rgba(39, 35, 96, 0) 33.33333432674408%,
+      rgba(39, 35, 96, 0) 66.66666865348816%,
+      #272360 100%
+    ); */
+    background: linear-gradient(
+      90deg,
+      rgba(39, 35, 96, 1) 4%,
+      rgba(39, 35, 96, 0) 70%
+    );
+  }
+
+  .lg-right-background {
+    /* background: linear-gradient(
+      90deg,
+      rgb(39, 35, 96) 0%,
+      rgba(39, 35, 96, 0) 33.33333432674408%,
+      rgba(39, 35, 96, 0) 66.66666865348816%,
+      #272360 100%
+    ); */
+    background: linear-gradient(
+      270deg,
+      rgba(39, 35, 96, 1) 4%,
+      rgba(39, 35, 96, 0) 70%
+    );
+  }
+}
+
+@layer components {
+  .card-gradient-shadow {
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.4),
+      0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(
+      0deg,
+      rgba(212, 212, 212, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}
+
+@layer components {
+  .gradient-top {
+    background: linear-gradient(
+      0deg,
+      rgba(39, 35, 96, 1) 15%,
+      rgba(0, 0, 0, 0) 75%
+    );
+  }
+}
+
+.slick-slide > div {
+  padding: 0 5px !important;
+}
+
+.slick-dots {
+  bottom: -45px !important;
+}
+
+.slick-dots li {
+  width: auto !important;
+  height: auto !important;
+  margin: 0 8px !important;
+}
+
+.slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #c7c7c7 !important;
+}
+
+.slick-dots li button::before {
+  display: none !important;
+}
+
+.slick-dots li.slick-active button {
+  border: 3px solid #fff !important;
+  border-radius: 50% !important;
+}
