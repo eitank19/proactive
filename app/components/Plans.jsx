@@ -127,11 +127,11 @@ const Plans = () => {
             </div>
           </div>
           <div className="overflow-hidden relative w-[18.125rem] mx-auto p-3 md:p-5 rounded-[1.25rem] lg-background">
-            <div className="flex justify-between items-center gap-2 md:gap-3 mb-5">
-              <p className="text-base md:text-xl tracking-[0.013rem] leading-6 font-normal px-2 py-1 bg-color-1 rounded-[0.625rem]">
+            <div className="flex justify-between items-center gap-3 mb-5">
+              <p className="text-xl tracking-[0.013rem] leading-6 font-normal px-3 py-1 bg-color-1 rounded-[0.625rem]">
                 מנוי שנתי
               </p>
-              <h3 className="text-base md:text-xl text-color-1 tracking-[0.013rem] leading-6 font-bold">
+              <h3 className="text-xl text-color-1 tracking-[0.013rem] leading-6 font-bold">
                 ₪275 לחודש
               </h3>
             </div>
@@ -141,7 +141,26 @@ const Plans = () => {
               alt=""
             />
 
-            <div className="text-base md:text-xl tracking-[0.013rem] leading-6 font-bold px-6 text-center py-3 bg-color-1 absolute -right-12 bottom-8 w-[13.125rem] -rotate-45">
+            <div className="text-xl tracking-[0.013rem] leading-6 font-bold px-6 text-center py-3 bg-color-1 absolute -right-12 bottom-8 w-[13.125rem] -rotate-45">
+              הכי משתלם
+            </div>
+          </div>
+          <div className="overflow-hidden relative w-[18.125rem] mx-auto p-3 md:p-5 rounded-[1.25rem] lg-background">
+            <div className="flex justify-between items-center gap-3 mb-5">
+              <p className="text-xl tracking-[0.013rem] leading-6 font-normal px-3 py-1 bg-color-1 rounded-[0.625rem]">
+                מנוי שנתי
+              </p>
+              <h3 className="text-xl text-color-1 tracking-[0.013rem] leading-6 font-bold">
+                ₪275 לחודש
+              </h3>
+            </div>
+            <img
+              src={'assets/images/plans-placeholder.png'}
+              className="w-[14.688rem] h-[14.688rem] object-cover rounded-full mx-auto"
+              alt=""
+            />
+
+            <div className="text-xl tracking-[0.013rem] leading-6 font-bold px-6 text-center py-3 bg-color-1 absolute -right-12 bottom-8 w-[13.125rem] -rotate-45">
               הכי משתלם
             </div>
           </div>
