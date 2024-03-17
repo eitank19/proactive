@@ -1,15 +1,23 @@
-"use client";
+'use client';
 
-import Menu from "./Menu";
-import CrossIcon from "../../public/assets/svg/cross-icon.svg";
-import HamburgerIcon from "../../public/assets/svg/hamburger-icon.svg";
-import MobileMenu from "./MobileMenu";
-import { useEffect, useState } from "react";
-import sanityClient from "../client";
+import Menu from './Menu';
+import CrossIcon from '../../public/assets/svg/cross-icon.svg';
+import HamburgerIcon from '../../public/assets/svg/hamburger-icon.svg';
+import MobileMenu from './MobileMenu';
+import { useEffect, useState } from 'react';
+import sanityClient from '../client';
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [links, setLinks] = useState(null);
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (body) {
+      body.style.overflow = showMobileMenu ? 'hidden' : 'auto';
+    }
+  }, [showMobileMenu]);
+
   useEffect(() => {
     sanityClient
       .fetch(
@@ -20,7 +28,7 @@ const Header = () => {
       waze,
     }`
       )
-      .then((data) => {
+      .then(data => {
         setLinks(data[0]);
       })
       .catch(console.error);
@@ -38,7 +46,7 @@ const Header = () => {
           >
             <span>להצטרפות</span>
             <img
-              src={"/assets/svg/whatsapp-icon.svg"}
+              src={'/assets/svg/whatsapp-icon.svg'}
               alt=""
               className="hidden lg:block w-5 h-5"
             />
@@ -47,7 +55,7 @@ const Header = () => {
           <div className="relative flex items-center gap-4">
             <a href="#" className="block ml-14 lg:ml-0">
               <img
-                src={"/assets/svg/pro-active.svg"}
+                src={'/assets/svg/pro-active.svg'}
                 alt=""
                 className="w-[7.875rem] h-[1rem] lg:h-[1.375rem] xl:w-auto"
               />
@@ -55,8 +63,8 @@ const Header = () => {
             <button
               onClick={() => setShowMobileMenu(!showMobileMenu)}
               className={
-                "lg:hidden absolute h-[2.813rem] w-[2.813rem] rounded-md flex justify-center items-center left-0 shadow-[inset_0_0_0.938rem_0_rgba(0,0,0,0.35),0_0.25rem_0.938rem_0_rgba(0,0,0,0.85),0_0_1.563rem_0_rgba(0,0,0,0.15)]" +
-                (showMobileMenu ? " bg-color-5" : " bg-color-2")
+                'lg:hidden absolute h-[2.813rem] w-[2.813rem] rounded-md flex justify-center items-center left-0 shadow-[inset_0_0_0.938rem_0_rgba(0,0,0,0.35),0_0.25rem_0.938rem_0_rgba(0,0,0,0.85),0_0_1.563rem_0_rgba(0,0,0,0.15)]' +
+                (showMobileMenu ? ' bg-color-5' : ' bg-color-2')
               }
             >
               {showMobileMenu ? <CrossIcon /> : <HamburgerIcon />}
@@ -64,7 +72,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {showMobileMenu && <MobileMenu />}
+      {showMobileMenu && <MobileMenu setShowMobileMenu={setShowMobileMenu} />}
     </header>
   );
 };
