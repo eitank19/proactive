@@ -37,9 +37,9 @@ const Plans = () => {
   };
 
   return (
-    <div
+    <section
       id="plans"
-      className="max-w-[68.125rem] mx-auto lg:w-[calc(100%-1.25rem)] mt-[6.25rem]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto lg:w-[calc(100%-1.25rem)] mt-[6.25rem]"
     >
       <h2 className="text-[1.875rem] md:text-[2.125rem] px-4 md:px-0 tracking-[0.021rem] leading-9 font-black text-center mb-5">
         נוח כמו טרנינג
@@ -161,7 +161,7 @@ const Plans = () => {
           />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

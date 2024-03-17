@@ -1,8 +1,8 @@
 const NavSocials = () => {
   return (
-    <div
+    <section
       id="socials"
-      className="max-w-[68.125rem] mx-auto w-[calc(100%-1.25rem)] mt-[6.25rem]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-1.25rem)] mt-[6.25rem]"
     >
       <div className="flex flex-col md:flex-row justify-center items-center gap-[3.75rem]">
         <div className="w-[18.75rem] order-2 md:-order-none">
@@ -64,7 +64,7 @@ const NavSocials = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

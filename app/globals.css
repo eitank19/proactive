@@ -24,13 +24,6 @@
   }
 
   .lg-left-background {
-    /* background: linear-gradient(
-      90deg,
-      rgb(39, 35, 96) 0%,
-      rgba(39, 35, 96, 0) 33.33333432674408%,
-      rgba(39, 35, 96, 0) 66.66666865348816%,
-      #272360 100%
-    ); */
     background: linear-gradient(
       90deg,
       rgba(39, 35, 96, 1) 4%,

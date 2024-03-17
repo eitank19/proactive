@@ -2,7 +2,7 @@ import FacilitiesCard from './FacilitiesCard';
 
 const Facilities = () => {
   return (
-    <div className="max-w-[68.125rem] mx-auto w-[calc(100%-1.25rem)]">
+    <section className="max-w-[68.125rem] mx-auto w-[calc(100%-1.25rem)]">
       <div className="relative mt-[6.25rem] hidden lg:block">
         <img
           src={'assets/images/facilities-banner.png'}
@@ -75,7 +75,7 @@ const Facilities = () => {
           />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

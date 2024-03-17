@@ -1,8 +1,8 @@
 const Professionals = () => {
   return (
-    <div
+    <section
       id="professionals"
-      className="max-w-[68.125rem] mx-auto w-[calc(100%-1.25rem)]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-1.25rem)]"
     >
       <div className="mt-[6.25rem] flex-col lg:flex-row text-center lg:text-right flex justify-between items-center gap-7 lg:gap-10 xl:gap-16">
         <div className="flex-1 flex-col flex gap-5 lg:gap-6 justify-center">
@@ -67,7 +67,7 @@ const Professionals = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

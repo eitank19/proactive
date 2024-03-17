@@ -2,9 +2,9 @@ import ClassesCard from './ClassesCard';
 
 const Classes = () => {
   return (
-    <div
+    <section
       id="classes"
-      className="max-w-[68.125rem] mx-auto w-[calc(100%-1.25rem)]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-1.25rem)]"
     >
       <div className="relative hidden lg:block mt-[6.25rem]">
         <img
@@ -87,7 +87,7 @@ const Classes = () => {
           />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

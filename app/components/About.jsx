@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <div
+    <section
       id="about"
-      className="max-w-[68.125rem] mx-auto w-[calc(100%-1.25rem)]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-1.25rem)]"
     >
-      <div className="mt-[6.25rem] flex-col lg:flex-row flex justify-between items-center gap-7 lg:gap-10 xl:gap-16">
+      <div className="mt-[6.25rem]  flex-col lg:flex-row flex justify-between items-center gap-7 lg:gap-10 xl:gap-16">
         <div className="flex-1 flex-col flex gap-0 lg:gap-5">
           <h2 className="text-[1.875rem] md:text-[2.125rem] tracking-[0.021rem] leading-8 md:leading-9 text-center lg:text-right font-black mb-5 lg:mb-0">
             שותפים להצלחה
@@ -65,7 +65,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

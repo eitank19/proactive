@@ -37,7 +37,7 @@ const Goals = () => {
   };
 
   return (
-    <div className="max-w-[68.125rem] overflow-hidden mx-auto lg:w-[calc(100%-1.25rem)] mt-[14.375rem] md:mt-[6.25rem]">
+    <section className="max-w-[68.125rem] overflow-hidden mx-auto lg:w-[calc(100%-1.25rem)] mt-[14.375rem] md:mt-[6.25rem]">
       <h2 className="text-[1.875rem] md:text-[2.125rem] px-4 md:px-0 tracking-[0.021rem] leading-9 font-black text-center mb-5">
         להציב יעדים ולהשיגם
       </h2>
@@ -183,7 +183,7 @@ const Goals = () => {
           />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

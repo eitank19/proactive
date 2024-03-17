@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <div className="max-w-[68.125rem] mx-auto lg:w-[calc(100%-1.25rem)]">
+    <section className="max-w-[68.125rem] mx-auto lg:w-[calc(100%-1.25rem)]">
       <div className="hidden lg:block relative mt-[6.25rem]">
         <img
           src={'assets/images/hero.png'}
@@ -63,7 +63,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
