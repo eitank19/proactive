@@ -16,7 +16,7 @@ const Header = () => {
           <a
             href=""
             target="_blank"
-            className="flex justify-center items-center gap-2 h-[2.25rem] lg:h-[2.75rem] text-color-3 bg-color-2 py-[0.5rem] px-[0.75rem] lg:py-[0.625rem] lg:px-[0.875rem] rounded-[0.625rem] text-base leading-4 lg:text-xl lg:leading-6 tracking-[0.009rem] lg:tracking-[0.013rem] font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-300"
+            className="flex justify-center items-center gap-2 h-[2.25rem] lg:h-[2.75rem] text-color-3 bg-color-2 py-[0.5rem] px-[0.75rem] lg:py-[0.625rem] lg:px-[0.875rem] rounded-[0.625rem] text-base leading-4 lg:text-xl lg:leading-6 tracking-[0.009rem] lg:tracking-[0.013rem] font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
           >
             <span>להצטרפות</span>
             <img
