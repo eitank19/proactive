@@ -12,7 +12,7 @@ const MobileMenu = ({ setShowMobileMenu }) => {
         }}
         className="text-lg w-fit leading-6 font-bold inline-flex tracking-[.2px] justify-center items-center gap-2 h-[44px] text-color-3 bg-color-2 py-[14px] px-[20px] rounded-[15px] shadow-[inset_0_0_15px_rgba(0,0,0,0.35),0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
       >
-        🏆 פיתוח ספורטאים
+        פיתוח ספורטאים
       </a>
       <a
         href="#plans"
@@ -21,7 +21,7 @@ const MobileMenu = ({ setShowMobileMenu }) => {
         }}
         className="text-lg w-fit leading-6 font-bold inline-flex tracking-[.2px] justify-center items-center gap-2 h-[44px] text-color-3 bg-color-2 py-[14px] px-[20px] rounded-[15px] shadow-[inset_0_0_15px_rgba(0,0,0,0.35),0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
       >
-        💸 מחירים
+        מחירים
       </a>
       <a
         href="#classes"
@@ -30,7 +30,7 @@ const MobileMenu = ({ setShowMobileMenu }) => {
         }}
         className="text-lg w-fit leading-6 font-bold inline-flex tracking-[.2px] justify-center items-center gap-2 h-[44px] text-color-3 bg-color-2 py-[14px] px-[20px] rounded-[15px] shadow-[inset_0_0_15px_rgba(0,0,0,0.35),0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
       >
-        🤸‍ חוגים
+        חוגים
       </a>
       <a
         href="#about"
@@ -39,7 +39,7 @@ const MobileMenu = ({ setShowMobileMenu }) => {
         }}
         className="text-lg w-fit leading-6 font-bold inline-flex tracking-[.2px] justify-center items-center gap-2 h-[44px] text-color-3 bg-color-2 py-[14px] px-[20px] rounded-[15px] shadow-[inset_0_0_15px_rgba(0,0,0,0.35),0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
       >
-        🏆 עלינו
+        עלינו
       </a>
       <a
         href="#supplements"
@@ -48,7 +48,7 @@ const MobileMenu = ({ setShowMobileMenu }) => {
         }}
         className="text-lg w-fit leading-6 font-bold inline-flex tracking-[.2px] justify-center items-center gap-2 h-[44px] text-color-3 bg-color-2 py-[14px] px-[20px] rounded-[15px] shadow-[inset_0_0_15px_rgba(0,0,0,0.35),0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
       >
-        👕 מוצרים נלווים
+        מוצרים נלווים
       </a>
       <a
         href="#socials"
@@ -57,7 +57,7 @@ const MobileMenu = ({ setShowMobileMenu }) => {
         }}
         className="text-lg w-fit leading-6 font-bold inline-flex tracking-[.2px] justify-center items-center gap-2 h-[44px] text-color-3 bg-color-2 py-[14px] px-[20px] rounded-[15px] shadow-[inset_0_0_15px_rgba(0,0,0,0.35),0_0_25px_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
       >
-        ✌️ סושיאל
+        סושיאל
       </a>
     </nav>
   );
