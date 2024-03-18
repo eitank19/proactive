@@ -64,13 +64,7 @@ const Professionals = ({ links }) => {
             {section4.sectionHeading}
           </h2>
           <ul className="flex-col flex gap-5  text-base leading-5 lg:text-lg text-right lg:leading-5 font-bold text-color-1">
-            <li>
-              {section4.item1}
-              <ul className="mt-1">
-                <li>{section4.subItem1}</li>
-                <li>{section4.subItem2}</li>
-              </ul>
-            </li>
+            <li>{section4.item1}</li>
             <li>{section4.item2}</li>
             <li>{section4.item3}</li>
             <li>{section4.item4}</li>
