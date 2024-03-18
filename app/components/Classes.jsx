@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import sanityClient from "../client";
-import imageUrlBuilder from "@sanity/image-url";
-import ClassesCard from "./ClassesCard";
+import React, { useState, useEffect } from 'react';
+import sanityClient from '../client';
+import imageUrlBuilder from '@sanity/image-url';
+import ClassesCard from './ClassesCard';
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -38,7 +38,7 @@ const Classes = ({ links }) => {
           cards,
     }`
       )
-      .then((data) => {
+      .then(data => {
         cardsData = data[0].cards;
         setSection6(data[0]);
       })
@@ -48,7 +48,7 @@ const Classes = ({ links }) => {
   return (
     <section
       id="classes"
-      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-1.25rem)]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-2.5rem)]"
     >
       <div className="relative hidden lg:block mt-[6.25rem]">
         <img
@@ -74,7 +74,7 @@ const Classes = ({ links }) => {
           >
             {section6.buttonText}
             <img
-              src={"/assets/svg/whatsapp-icon.svg"}
+              src={'/assets/svg/whatsapp-icon.svg'}
               alt=""
               className="w-5 h-5"
             />
@@ -111,11 +111,11 @@ const Classes = ({ links }) => {
         <a
           href={whatsapp}
           target="_blank"
-          className="flex w-fit mx-auto tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-3 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+          className="flex w-fit mx-auto tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-1 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
         >
           {section6.buttonText}
           <img
-            src={"/assets/svg/whatsapp-icon.svg"}
+            src={'/assets/svg/whatsapp-icon.svg'}
             alt=""
             className="w-5 h-5"
           />

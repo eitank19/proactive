@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import sanityClient from "../client";
+import { useState, useEffect } from 'react';
+import sanityClient from '../client';
 
 const NavSocials = ({ links }) => {
   const [section9, setSection9] = useState(null);
@@ -19,7 +19,7 @@ const NavSocials = ({ links }) => {
       text9,
     }`
       )
-      .then((data) => {
+      .then(data => {
         setSection9(data[0]);
       })
       .catch(console.error);
@@ -28,7 +28,7 @@ const NavSocials = ({ links }) => {
   return (
     <section
       id="socials"
-      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-1.25rem)] mt-[6.25rem]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto w-[calc(100%-2.5rem)] mt-[6.25rem]"
     >
       <div className="flex flex-col md:flex-row justify-center items-center gap-[3.75rem]">
         <div className="w-[18.75rem] order-2 md:-order-none">
@@ -41,7 +41,7 @@ const NavSocials = ({ links }) => {
             className="block h-[18.75rem] w-[18.75rem] rounded-[1.25rem] object-cover card-gradient-shadow"
           >
             <img
-              src={"assets/images/social-insta.png"}
+              src={'assets/images/social-insta.png'}
               className="object-cover"
               alt=""
             />
@@ -67,14 +67,14 @@ const NavSocials = ({ links }) => {
             <div className="flex justify-center items-center gap-8">
               <a href={gmaps} target="_blank">
                 <img
-                  src={"assets/images/google-icon.png"}
+                  src={'assets/images/google-icon.png'}
                   className="w-[5rem] h-[5rem] object-cover"
                   alt=""
                 />
               </a>
               <a href={waze} target="_blank">
                 <img
-                  src={"assets/images/waze-icon.png"}
+                  src={'assets/images/waze-icon.png'}
                   className="w-[5rem] h-[5rem] object-cover"
                   alt=""
                 />

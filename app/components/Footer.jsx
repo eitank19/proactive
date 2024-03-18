@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import sanityClient from "../client";
+import React, { useState, useEffect } from 'react';
+import sanityClient from '../client';
 
 const Footer = ({ links }) => {
   const [footer, setFooter] = useState(null);
@@ -24,7 +24,7 @@ const Footer = ({ links }) => {
       text14,
     }`
       )
-      .then((data) => {
+      .then(data => {
         setFooter(data[0]);
       })
       .catch(console.error);
@@ -33,7 +33,7 @@ const Footer = ({ links }) => {
   return (
     <footer className="mt-[6.25rem]">
       <div className="bg-color-5 py-8">
-        <div className="max-w-[68.125rem] mx-auto w-[calc(100%-1.25rem)] flex-col md:flex-row md:flex-wrap justify-center lg:flex-nowrap flex items-center md:items-start lg:justify-between gap-8 lg:gap-4 xl:gap-8">
+        <div className="max-w-[68.125rem] mx-auto w-[calc(100%-2.5rem)] flex-col md:flex-row md:flex-wrap justify-center lg:flex-nowrap flex items-center md:items-start lg:justify-between gap-8 lg:gap-4 xl:gap-8">
           <div className="w-[20.625rem] md:w-[21.25rem]">
             <h2 className="text-[1.5rem] md:text-[2.125rem] leading-7 md:leading-[2.5rem] font-black text-center md:text-right">
               {footer.text1}
@@ -44,11 +44,11 @@ const Footer = ({ links }) => {
             <a
               href={whatsapp}
               target="_blank"
-              className="hidden md:inline-flex tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-3 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+              className="hidden md:inline-flex tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-1 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
             >
               {footer.buttonText}
               <img
-                src={"/assets/svg/whatsapp-icon.svg"}
+                src={'/assets/svg/whatsapp-icon.svg'}
                 alt=""
                 className="w-5 h-5"
               />
@@ -108,11 +108,11 @@ const Footer = ({ links }) => {
             <a
               href={whatsapp}
               target="_blank"
-              className="inline-flex tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-3 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+              className="inline-flex tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-1 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
             >
               {footer.buttonText}
               <img
-                src={"/assets/svg/whatsapp-icon.svg"}
+                src={'/assets/svg/whatsapp-icon.svg'}
                 alt=""
                 className="w-5 h-5"
               />
@@ -124,7 +124,7 @@ const Footer = ({ links }) => {
         {footer.text14}
         <a href="#">
           <img
-            src={"/assets/svg/pro-active.svg"}
+            src={'/assets/svg/pro-active.svg'}
             alt=""
             className="h-[0.75rem] w-fit"
           />

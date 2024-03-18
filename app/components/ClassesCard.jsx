@@ -1,5 +1,5 @@
-import sanityClient from "../client";
-import imageUrlBuilder from "@sanity/image-url";
+import sanityClient from '../client';
+import imageUrlBuilder from '@sanity/image-url';
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -15,7 +15,7 @@ const ClassesCard = ({ data }) => {
         className="block w-[2.5rem] h-[2.5rem] xl:w-[5rem] xl:h-[5rem]"
         alt=""
       />
-      <h3 className="text-base md:text-lg  tracking-[0.011rem] leading-5 lg:text-xl lg:tracking-[0.013rem] lg:leading-6 lg:text-center font-bold text-color-1">
+      <h3 className="text-base md:text-lg  tracking-[0.011rem] leading-5 lg:text-xl lg:tracking-[0.013rem] lg:leading-6 text-center font-bold text-color-1">
         {data.cardText}
       </h3>
     </div>

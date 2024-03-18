@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import sanityClient from "../client";
-import imageUrlBuilder from "@sanity/image-url";
-import { useState, useEffect } from "react";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import sanityClient from '../client';
+import imageUrlBuilder from '@sanity/image-url';
+import { useState, useEffect } from 'react';
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -15,7 +15,7 @@ function urlFor(source) {
 
 const Plans = ({ links }) => {
   const settings = {
-    className: "center",
+    className: 'center',
     centerMode: true,
     infinite: true,
     slidesToShow: 3,
@@ -40,7 +40,7 @@ const Plans = ({ links }) => {
       },
     ],
     dots: true,
-    dotsClass: "slick-dots",
+    dotsClass: 'slick-dots',
     rtl: true,
     arrows: false,
   };
@@ -57,7 +57,7 @@ const Plans = ({ links }) => {
       cards,
     }`
       )
-      .then((data) => {
+      .then(data => {
         setSection5(data[0]);
         setCards(data[0].cards);
       })
@@ -68,7 +68,7 @@ const Plans = ({ links }) => {
   return (
     <section
       id="plans"
-      className="max-w-[68.125rem] scroll-mt-20 mx-auto lg:w-[calc(100%-1.25rem)] mt-[6.25rem]"
+      className="max-w-[68.125rem] scroll-mt-20 mx-auto lg:w-[calc(100%-2.5rem)] mt-[6.25rem]"
     >
       <h2 className="text-[1.875rem] md:text-[2.125rem] px-4 md:px-0 tracking-[0.021rem] leading-9 font-black text-center mb-5">
         {section5.sectionHeading}
@@ -110,11 +110,11 @@ const Plans = ({ links }) => {
         <a
           href={whatsapp}
           target="_blank"
-          className="inline-flex tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-3 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+          className="inline-flex tracking-[0.013rem] justify-center items-center gap-2 h-[3.375rem] text-color-1 bg-color-2 py-[0.875rem] px-[1.5rem] rounded-[0.938rem] text-xl leading-6 font-bold shadow-[inset_0_0_0.938rem_rgba(0,0,0,0.35),0_0_1.563rem_rgba(0,0,0,0.15)] transition-all duration-200 hover:bg-color-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
         >
           קדימה, אין תירוצים
           <img
-            src={"/assets/svg/whatsapp-icon.svg"}
+            src={'/assets/svg/whatsapp-icon.svg'}
             alt=""
             className="w-5 h-5"
           />
