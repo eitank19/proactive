@@ -15,12 +15,12 @@ const Professionals = ({ links }) => {
       buttonText,
       sectionHeading,
       item1,
+      subItem1,
+      subItem2,
       item2,
       item3,
       item4,
       item5,
-      item6,
-      item7,
     }`
       )
       .then(data => {
