@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import sanityClient from '../client';
+import React, { useState, useEffect } from "react";
+import sanityClient from "../client";
 
 const Professionals = ({ links }) => {
   const [section4, setSection4] = useState(null);
@@ -23,7 +23,7 @@ const Professionals = ({ links }) => {
       item5,
     }`
       )
-      .then(data => {
+      .then((data) => {
         setSection4(data[0]);
       })
       .catch(console.error);
@@ -53,7 +53,7 @@ const Professionals = ({ links }) => {
           >
             {section4.buttonText}
             <img
-              src={'/assets/svg/whatsapp-icon.svg'}
+              src={"/assets/svg/whatsapp-icon.svg"}
               alt=""
               className="w-5 h-5"
             />
@@ -64,13 +64,9 @@ const Professionals = ({ links }) => {
             {section4.sectionHeading}
           </h2>
           <ul className="flex-col flex gap-5  text-base leading-5 lg:text-lg text-right lg:leading-5 font-bold text-color-1">
-            <li>
-              {section4.item1}
-              <ul className="mt-1">
-                <li>{section4.subItem1}</li>
-                <li>{section4.subItem2}</li>
-              </ul>
-            </li>
+            <li>{section4.item1}</li>
+            <li>{section4.subItem1}</li>
+            <li>{section4.subItem2}</li>
             <li>{section4.item2}</li>
             <li>{section4.item3}</li>
             <li>{section4.item4}</li>
@@ -85,7 +81,7 @@ const Professionals = ({ links }) => {
           >
             {section4.buttonText}
             <img
-              src={'/assets/svg/whatsapp-icon.svg'}
+              src={"/assets/svg/whatsapp-icon.svg"}
               alt=""
               className="w-5 h-5"
             />
