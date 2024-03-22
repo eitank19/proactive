@@ -10,6 +10,7 @@ import NavSocials from "./components/NavSocials";
 import Plans from "./components/Plans";
 import Professionals from "./components/Professionals";
 import Supplements from "./components/Supplements";
+import Scripts from "./components/Scripts";
 import sanityClient from "./client";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
   if (!links) return null;
   return (
     <main>
+      <Scripts links={links} />
       <Hero links={links} />
       <Goals links={links} />
       <Facilities links={links} />
