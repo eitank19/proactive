@@ -19,7 +19,8 @@
     "react-slick": "^0.30.2",
     "sanity": "^3.34.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "magicul/next-google-tag-manager": "2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
