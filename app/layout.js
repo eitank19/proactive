@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className={rubik.className}>
         <Header />
         {children}
+        <script src="https://cdn.enable.co.il/licenses/enable-L2521757f2doiqut-0324-57225/init.js"></script>
       </body>
     </html>
   );

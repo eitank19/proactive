@@ -85,10 +85,10 @@ const Plans = ({ links }) => {
                 className="overflow-hidden relative w-[18.125rem] mx-auto p-3 md:p-5 rounded-[1.25rem] lg-background"
               >
                 <div className="flex justify-between items-center gap-3 mb-5">
-                  <p className="text-xl tracking-[0.013rem] leading-6 font-normal px-3 py-1 bg-color-1 rounded-[0.625rem]">
+                  <p className="text-base tracking-[0.013rem] leading-6 font-normal px-3 py-1 bg-color-1 rounded-[0.625rem]">
                     {card.duration}
                   </p>
-                  <h3 className="text-xl text-color-1 tracking-[0.013rem] leading-6 font-bold">
+                  <h3 className="text-base text-color-1 tracking-[0.013rem] leading-6 font-bold">
                     {card.price}
                   </h3>
                 </div>
