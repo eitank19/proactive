@@ -1,4 +1,5 @@
 "use client";
+import { useClient } from "next/client";
 import { useState, useEffect } from "react";
 import About from "./components/About";
 import Classes from "./components/Classes";
@@ -33,7 +34,6 @@ export default function Home() {
   if (!links) return null;
   return (
     <main>
-      <Scripts links={links} />
       <Hero links={links} />
       <Goals links={links} />
       <Facilities links={links} />
@@ -44,6 +44,7 @@ export default function Home() {
       <Supplements links={links} />
       <NavSocials links={links} />
       <Footer links={links} />
+      <Scripts links={links} />
     </main>
   );
 }

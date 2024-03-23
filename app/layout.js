@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
 import { Rubik } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
+import { useClient } from 'next/client'; // Import useClient
 
 const rubik = Rubik({ subsets: ['latin'] });
 
@@ -12,18 +12,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    // Dynamically load the script asynchronously
-    const script = document.createElement('script');
-    script.src = 'https://cdn.enable.co.il/licenses/enable-L2521757f2doiqut-0324-57225/init.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Cleanup function
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  useClient(); // Mark the component as a client-side component
 
   return (
     <html lang="he" dir="rtl">
