@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Rubik } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
@@ -11,12 +12,24 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    // Dynamically load the script asynchronously
+    const script = document.createElement('script');
+    script.src = 'https://cdn.enable.co.il/licenses/enable-L2521757f2doiqut-0324-57225/init.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Cleanup function
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <html lang="he" dir="rtl">
       <body className={rubik.className}>
         <Header />
         {children}
-        <script src="https://cdn.enable.co.il/licenses/enable-L2521757f2doiqut-0324-57225/init.js"></script>
       </body>
     </html>
   );
